@@ -33,9 +33,7 @@ export class TodosComponent implements OnInit {
   }
 
   addTodo(text: string): void{
-    let todo: Todo = new Todo(this.nextId(), text, false);
-    console.log(text);
-    
+    let todo: Todo = new Todo(this.nextId(), text, false);    
     this.todos.push(todo)
   }
 

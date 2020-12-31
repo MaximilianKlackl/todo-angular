@@ -17,7 +17,9 @@ export class AddTodosComponent implements OnInit {
   @Output() addTodoEvent = new EventEmitter<string>();
 
   addTodo(){    
-    this.addTodoEvent.emit(this.text);
-    this.text = "";    
+    if(this.text){
+      this.addTodoEvent.emit(this.text);
+      this.text = "";   
+    } 
   }
 }
