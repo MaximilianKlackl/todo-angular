@@ -1,0 +1,8 @@
+<div class="input-group my-3">
+    <p class="form-control text-left" aria-label="Text input with radio button"> {{ todo.id }}: {{ todo.title }}</p>
+    <div class="input-group-append">
+      <div class="input-group-text">
+      <input type="radio" aria-label="Radio button for following text input" (click)="deleteTodo(todo)">
+      </div>
+    </div>
+</div>
